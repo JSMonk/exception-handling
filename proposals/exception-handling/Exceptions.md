@@ -12,7 +12,7 @@ Exception handling allows code to break control flow when an exception is
 thrown. The exception can be any exception known by the WebAssembly module, or
 it may an unknown exception that was thrown by a called imported function.
 
-One of the problems with exception handling is that both WebAssembly and an
+One of the problems with exception handling is that both WebAssem
 embedder have different notions of what exceptions are, but both must be aware
 of the other.
 
@@ -162,7 +162,7 @@ after possible block parameters were popped.
 
 Then catch clauses are tried in the order
 they appear in the catching try block, until one matches. If a matching catch clause is found, control is transferred to the label of that catch clause.
-In case of `catch` or `catch_ref`,
+In case of `catch` or `catch_all`,
 the arguments of the exception are pushed back onto the stack.
 For `catch_ref` and `catch_all_ref`, an exception reference is then pushed to the stack, which represents the caught exception.
 
